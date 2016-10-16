@@ -1,0 +1,14 @@
+c:\users\winson\documents\visual studio 2015\Projects\DisplayTweets\DisplayTweets\bin\Debug\DisplayTweets.exe.config
+C:\Users\Winson\Documents\Visual Studio 2015\Projects\DisplayTweets\DisplayTweets\obj\Debug\DisplayTweets.csprojResolveAssemblyReference.cache
+C:\Users\Winson\Documents\Visual Studio 2015\Projects\DisplayTweets\DisplayTweets\obj\Debug\MainWindow.g.cs
+C:\Users\Winson\Documents\Visual Studio 2015\Projects\DisplayTweets\DisplayTweets\obj\Debug\App.g.cs
+C:\Users\Winson\Documents\Visual Studio 2015\Projects\DisplayTweets\DisplayTweets\obj\Debug\DisplayTweets_MarkupCompile.cache
+C:\Users\Winson\Documents\Visual Studio 2015\Projects\DisplayTweets\DisplayTweets\obj\Debug\DisplayTweets_MarkupCompile.lref
+C:\Users\Winson\Documents\Visual Studio 2015\Projects\DisplayTweets\DisplayTweets\bin\Debug\DisplayTweets.exe
+C:\Users\Winson\Documents\Visual Studio 2015\Projects\DisplayTweets\DisplayTweets\bin\Debug\DisplayTweets.pdb
+C:\Users\Winson\Documents\Visual Studio 2015\Projects\DisplayTweets\DisplayTweets\obj\Debug\MainWindow.baml
+C:\Users\Winson\Documents\Visual Studio 2015\Projects\DisplayTweets\DisplayTweets\obj\Debug\DisplayTweets.g.resources
+C:\Users\Winson\Documents\Visual Studio 2015\Projects\DisplayTweets\DisplayTweets\obj\Debug\DisplayTweets.Properties.Resources.resources
+C:\Users\Winson\Documents\Visual Studio 2015\Projects\DisplayTweets\DisplayTweets\obj\Debug\DisplayTweets.csproj.GenerateResource.Cache
+C:\Users\Winson\Documents\Visual Studio 2015\Projects\DisplayTweets\DisplayTweets\obj\Debug\DisplayTweets.exe
+C:\Users\Winson\Documents\Visual Studio 2015\Projects\DisplayTweets\DisplayTweets\obj\Debug\DisplayTweets.pdb
