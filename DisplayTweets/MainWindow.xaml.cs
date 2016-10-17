@@ -36,7 +36,7 @@ namespace DisplayTweets
 
         private void searchButton_Click(object sender, RoutedEventArgs e)
         {
-            string userInput = inputBox.Text.Replace('#', ' ');
+            string userInput = inputBox.Text.Replace("#", "%23");
             string texts = getTweets(userInput);
             string[] tokens = texts.Split(new string[] { "\"text\":\"", "\",\"timeline\":", "\",\"profileImageURL\":\"", "\",\"followersCount\":" }, StringSplitOptions.None);
             if (tokens.Length > 4) { 
