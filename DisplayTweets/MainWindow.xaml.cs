@@ -27,38 +27,26 @@ namespace DisplayTweets
             InitializeComponent();
         }
 
-        public string getTweets()
+        public string getTweets(string searchValue)
         {
             WebClient client = new WebClient();
-            byte[] rawBytes = client.DownloadData("http://feeds.incrowdsports.com/twitter/tweets/search?value={0}");
+            byte[] rawBytes = client.DownloadData("http://feeds.incrowdsports.com/twitter/tweets/search?value=" + searchValue);
             return Encoding.UTF8.GetString(rawBytes);
         }
 
         private void searchButton_Click(object sender, RoutedEventArgs e)
         {
-            string userInput = inputBox.Text;
-            string[] phrases = userInput.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            if (phrases.Length == 0)
-            {
-                phrases = new String[] { "" };
-            }
-            string texts = getTweets();
+            string userInput = inputBox.Text.Replace('#', ' ');
+            string texts = getTweets(userInput);
             string[] tokens = texts.Split(new string[] { "\"text\":\"", "\",\"timeline\":", "\",\"profileImageURL\":\"", "\",\"followersCount\":" }, StringSplitOptions.None);
             if (tokens.Length > 4) { 
                 List<Tweet> tweets = new List<Tweet>();
                 for (int i = 1; i < tokens.Length; i += 4)
                 {
-                    foreach (string s in phrases)
+                    Tweet tweet = new Tweet() { AvatarSource = tokens[i + 2], TweetText = tokens[i] };
+                    if (!tweets.Contains(tweet))
                     {
-                        if (tokens[i].ToUpper().Contains(s.ToUpper()))
-                        {
-                            Tweet tweet = new Tweet() { AvatarSource = tokens[i + 2], TweetText = tokens[i] };
-                            if (!tweets.Contains(tweet))
-                            {
-                                tweets.Add(tweet);
-                            }
-
-                        }
+                        tweets.Add(tweet);
                     }
                 }
                 if (tweets.Count > 0)
